@@ -22,6 +22,6 @@ Deployed application: https://note-taker-hiusumjaimeyue.herokuapp.com/
 
 Screenshots of the application is included below.   
 index.html                
-![Note-Taker Preview1](https://github.com/HiuSumJaimeYue/Note-Taker/blob/main/screenshots/noteTakerPreview1.jpg "Note-Taker-Preview1")      
+![Note-Taker Preview1](https://github.com/HiuSumJaimeYue/Note-Taker/blob/main/Screenshots/noteTakerPreview1.jpg "Note-Taker-Preview1")      
 notes.html            
-![Note-Taker Preview2](https://github.com/HiuSumJaimeYue/Note-Taker/blob/main/screenshots/noteTakerPreview2.jpg "Note-Taker-Preview2")  
+![Note-Taker Preview2](https://github.com/HiuSumJaimeYue/Note-Taker/blob/main/Screenshots/noteTakerPreview2.jpg "Note-Taker-Preview2")  
