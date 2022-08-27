@@ -1,7 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const { db } = require('./db/db.json');
+const { notes } = require('./db/db.json');
 // const apiRoutes = require('./routes/apiRoutes');
 // const htmlRoutes = require('./routes/htmlRoutes');
 
@@ -17,8 +17,8 @@ const app = express();
 // app.use('/api', apiRoutes);
 // app.use('/', htmlRoutes);
 
-app.get('/api/db', (req, res) => {
-    res.json(db);
+app.get('/api/notes', (req, res) => {
+    res.json(notes);
 });
 
 app.listen(PORT, () => {
