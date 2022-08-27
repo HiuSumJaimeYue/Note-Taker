@@ -1,13 +1,14 @@
 const router = require('express').Router();
-
+const fs =require('fs')
+const path = require('path')
 const { findById, createNewNote, validateNote, deleteNoteById } = require('../../lib/notes');
-const { notes } = require('../../db/db.json');
+const notes = require('../../db/db.json')
 
 //In here, everything shows as JSON
 
 router.get('/notes', (req, res) => {
     let results = notes;
-    res.json(results);
+    res.sendFile(path.join(__dirname,"../../db/db.json"))
 });
 
 router.get('/notes/:id', (req, res) => {
@@ -32,7 +33,7 @@ router.post('/notes', (req, res) => {
 });
 
 router.delete('/notes/:id', (req, res) => {
-    console.log("Delete");
+
     const result = deleteNoteById(req.params.id, notes);;
     if (result) {
         res.json(result);
